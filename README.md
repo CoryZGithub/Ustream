@@ -1,61 +1,55 @@
-# Building a Fullstack Netflix Clone with React, NextJS, TailwindCSS & Prisma
+# A Streaming site -- video and live streams.
 
-![image](https://user-images.githubusercontent.com/23248726/220005380-ede4fb14-0b8d-4582-a063-3cc4beeccfb7.png)
-
-This is a website built with primarily React, NextJS, TailwindCSS & Prisma.
-
+This is a website built with primarily NextJS, TailwindCSS, MongoDB & Prisma.
 
 Features:
 
-- Environment, Typescript, NextJS Setup
-- MongoDB & Prisma connect, Database creation
-- Authentication with NextAuth, Google & Github Login
-- Full responsiveness on all pages
+- Live Streaming
+- Typescript, NextJS, Tailwind
+- MongoDB & Prisma connect
+- Authentication w/ NextAuth, Google & Github Login
+- Responsive CSS
 - Cookie based authentication
-- API and Controllers creation
-- Detail-oriented effects and animations using TailwindCSS
 - React SWR data fetching
-- Zustand state management
 
-### Prerequisites
-
-**Node version 14.x**
-
-### Cloning the repository
+### Start site
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next-netflix-tutorial.git
-```
-
-### Install packages
-
-```shell
-npm i
-```
-
-### Setup .env file
-
-
-```js
-DATABASE_URL=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-GITHUB_ID=
-GITHUB_SECRET=
-NEXTAUTH_JWT_SECRET=
-NEXTAUTH_SECRET=
-```
-
-### Start the app
-
-```shell
+npm install
 npm run dev
 ```
 
-## Available commands
+Then go to localhost:3000
 
-Running commands with npm `npm run [command]`
+### To Livestream
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+To livestream, go to a livestreaming application like OBS and put one of the following Stream Keys into the streaming application. Then, go to the profile's Stream via clicking on their icon, and watch your stream.
+
+Send all video data to the following server: rtmps://global-live.mux.com/app
+
+List of Livestreams, **SK=SecretKey**. PB=Playback Key. PB Key is for developer use whereas **SK is for Streamer to put into the streaming application.** -->
+
+Cory
+
+- SK: 5dfc6a74-464c-e8c3-bfbc-dc29bcf12d9f
+- PB: OcmfSvrb7pwQ4AJ9JOCzMpxIVso00ef7XClNB008JLvpo
+
+Boss
+
+- SK: 57532a39-df0c-b4de-dfc3-b9bdfddb44e5
+- PB: ErilVv1t9cazYfhZ7018jJ6zB4AlFTp01IUBZZOEdSto00
+
+Tod
+
+- SK: 152e35bd-2a9a-bb8c-1bed-cdec4b910ac4
+- pb: 5mwibglZURQYCS18VjDtoh9jJ01712Jd02qqAKlE93iSs
+
+Bob
+
+- SK: bae0d551-b43e-104b-c625-4221d48ffd1f
+- PB: ctDM012h02jivA64r7ZpTfXJOAWO9QO5HYDb02KyvZw74c
+
+Tim
+
+- SK: 81a29db6-0a0b-ae56-65df-44295452630d
+- PB: WKaX005yv5TC4yXTcY6miaMKB8vvEMe9KkTSnD1crKps

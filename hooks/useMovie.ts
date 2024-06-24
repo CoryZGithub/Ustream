@@ -7,6 +7,8 @@ const useMovie = (id?: string) => {
     revalidateOnFocus: false,
     revalidateOnReconnect: false,
   });
+  
+  
   return {
     data,
     error,

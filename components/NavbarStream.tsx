@@ -5,6 +5,7 @@ import {
   ChevronDownIcon,
 } from "@heroicons/react/24/outline";
 
+import { useRouter } from "next/router";
 import AccountMenu from "@/components/AccountMenu";
 import MobileMenu from "@/components/MobileMenu";
 import NavbarItem from "@/components/NavbarItem";
@@ -22,7 +23,7 @@ const Navbar = () => {
       if (window.scrollY >= TOP_OFFSET) {
         setShowBackground(true);
       } else {
-        setShowBackground(false);
+        setShowBackground(true);
       }
     };
 
@@ -42,7 +43,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='w-full fixed z-40'>
+    <nav className='w-full z-40'>
       <div
         className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${
           showBackground ? "bg-zinc-900 bg-opacity-90" : ""
@@ -50,7 +51,7 @@ const Navbar = () => {
       >
         <img src='/images/ustreamlogo.png' className='h-4 lg:h-7' alt='Logo' />
         <div className='flex-row ml-8 gap-7 hidden lg:flex'>
-          <NavbarItem label='Home' active />
+          <NavbarItem label='Home' />
           <NavbarItem label='Popular' active />
           <NavbarItem label='Recommended' active />
           <NavbarItem label='New & Popular' active />
